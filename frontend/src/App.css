@@ -1,0 +1,50 @@
+.btn {
+  margin-top: 30px;
+  width: 100px;
+}
+
+.form-control {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-top: 25px;
+}
+
+.form-check-label,
+.form-check-input {
+  position: relative;
+  top: 10px;
+}
+
+.container {
+  background-color: rgba(245, 245, 245, 0.945);
+  height: 570px;
+  width: 35%;
+  border-radius: 10px;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  z-index: -1;
+  padding: 80px;
+}
+
+body {
+  background: linear-gradient(45deg, #dec097, transparent);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+  height: 400px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
