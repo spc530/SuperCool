@@ -31,7 +31,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, #dec097, transparent);
+  background: linear-gradient(45deg, #97784c, transparent);
   background-size: 500% 500%;
   animation: gradient 15s ease infinite;
   height: 400px;

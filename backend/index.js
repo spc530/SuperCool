@@ -1,6 +1,7 @@
 // SuperCool/backend/index.js
 
 const express = require("express");
+const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -8,6 +9,8 @@ const users = [
   { email: "hello@gmail.com", pwd: "123" },
   { email: "helloagain@gmail.com", pwd: "456" },
 ];
+
+app.use(express.static(path.resolve(__dirname, "../frontend/build")));
 
 app.get("/get-users", (req, res) => {
   res.json(users);
